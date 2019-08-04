@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+}
+
+.navbar {
+    float: right;
+    padding: 0;
+    margin: 0;
+    background-color: darkgrey;
+    height: 1950px; 
+    width: 125px;
+}
+
+.myList {
+    padding-top: 10px; 
+    list-style: none;
+}
+
+.myList li {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.myList a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+
+.home {
+    font-size: 50px;
+    padding-top: 50px;
+    height: 500px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.container {
+    width: 100%;
+
+}
+
+.container h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container p {
+    padding-left: 15px;
+}
+
+.bio {
+    background-color: grey;
+    height: 200px;
+}
+
+.exp {
+    background-color: lightgrey;
+    height: 300px;
+}
+
+.education {
+    background-color: grey;
+    height: 300px;
+}
+
+.projects {
+    background-color: lightgrey;
+    height: 500px;
+}
+
+.connect {
+    height: 100px;
+}
