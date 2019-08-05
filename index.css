@@ -1,27 +1,47 @@
+body, html, h1, h2, h3, h4, p {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
 }
 
 .navbar {
+    display: block;
     float: right;
     padding: 0;
     margin: 0;
     background-color: darkgrey;
     height: 1950px; 
-    width: 125px;
+    width: 145px;
 }
 
-.myList {
+.navbar ul {
+    padding: 0 0 5px 5px;
+}
+
+.navList {
     padding-top: 10px; 
     list-style: none;
+    position: fixed;
 }
 
-.myList li {
+.navList li {
     margin-top: 15px;
     margin-left: 10px;
 }
 
-.myList a {
+.navList a {
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -49,8 +69,12 @@ body {
 }
 
 .container p {
-    padding-left: 15px;
+    font-size: 18.5px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
+
+
 
 .bio {
     background-color: grey;
@@ -61,17 +85,79 @@ body {
     background-color: lightgrey;
     height: 300px;
 }
+.container h3 {
+    padding-top: 5px;
+    font-size: 18.5px;
+    padding-left: 20px;
+}
+
+.container ul {
+    padding-top: 5px;
+    padding-left: 35px;
+}
+
+.container li {
+    padding-top: 2.5px; 
+    line-height: 1.2;
+}
 
 .education {
     background-color: grey;
     height: 300px;
 }
 
-.projects {
-    background-color: lightgrey;
-    height: 500px;
+.education p {
+    font-size:  16px;
+    padding-left: 35px;
 }
 
+.projects {
+    background-color: lightgrey;
+    height: 400px;
+}
+
+.projects li {
+    padding-bottom: 5px;
+}
+
+.projects a {
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.projects p {
+    margin-left: 10px;
+}
+
+
 .connect {
+    display: block;
     height: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container ul {
+        padding: 0 0 0 5px;
+    
+    }
+
+    .container li {
+        line-height: 1.1;
+    }
+
+    .container h2 {
+        padding-bottom: 5px;
+    }
+
+    .container h3 {
+        padding: 0;
+    }
+
+    .projects p {
+        padding: 2px 0px 0px 2px;
+        margin: 0;
+        font-size: 15px;
+    }
 }
