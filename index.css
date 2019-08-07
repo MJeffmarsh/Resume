@@ -1,10 +1,8 @@
 body, html, h1, h2, h3, h4, p {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family:'Red Hat Display', sans-serif;
     margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
+	padding: 0;
+	font-size: 100%;
     vertical-align: baseline;
 }
 
@@ -12,27 +10,33 @@ body {
     line-height: 1;
 }
 
+
 ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .navbar {
     float: right;
-    width: 135px;
-    height: 1400px;
-    min-height: 1350px;
+    width: 175px;
+    height: 1425px;
+    
 }
 
 .navList {
     padding-top: 10px; 
     list-style: none;
-    background-color: darkgrey;
+    background-color: rgb(65, 65, 65);
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
     position: fixed;
     text-align: left;
+    border-left: 2px solid rgba(0, 0, 0, .2);
 }
 
 .navList li {
@@ -40,29 +44,42 @@ ul {
 }
 
 .navList a {
+    padding-left: 15px;
     font-size: 20px;
-    text-decoration: none;
     color: black;
 }
 
+
+.navList a:hover {
+    font-size: 25px;
+}
+
+.navList i {
+    width: 15px;
+    height: 15px;
+    font-size: 17.5px;
+}
 
 .home {
     font-size: 50px;
     padding-top: 50px;
     text-align: center;
-    background-color: lightgray;
+    background-color: rgba(55, 95, 95, .85);
     height: 400px;
+    border-bottom: 1.5px solid rgba(0, 0, 0, .2);
 }
 
 .container {
     width: 100%;
-    height: 100%
+    height: 100%;
+    border-bottom: 1.5px solid rgba(0, 0, 0, .2);
 }
 
 .container h2 {
     font-size: 25px;
     text-align: center;
     padding-top: 5px;
+
 }
 
 .container p {
@@ -74,22 +91,21 @@ ul {
 
 
 .bio {
-    background-color: grey;
+    background-color:  rgba(55, 85, 95, .85);
     text-align: left;
     height: 130px;
 }
 
 .exp {
-    background-color: lightgrey;
+    background-color: rgba(55, 75, 95, .85);
 }
+
 .container h3 {     
     font-size: 18.5px;
     padding-left: 20px;
 }
 
-.container ul {
-    padding-left: 35px;
-}
+
 
 .container li {
     padding-top: 2.5px; 
@@ -97,7 +113,7 @@ ul {
 }
 
 .education {
-    background-color: grey;
+    background-color:  rgba(65, 65, 95, .85);
 }
 
 .education p {
@@ -106,36 +122,91 @@ ul {
 }
 
 .projects {
-    background-color: lightgrey;
+    background-color:  rgba(55, 55, 85, .85);
+}
+
+.projects h4 {
+    padding-bottom: 2px;
 }
 
 .projects li {
     padding-bottom: 5px;
 }
 
+.projects li:hover {
+    font-size: 20px;
+}
+
 .projects a {
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
     padding-left: 10px;
+    color: rgb(15, 15, 15);
+}
+
+.projects a:visited {
+    color: rgb(35, 35, 35);
 }
 
 .projects p {
     margin-left: 10px;
 }
 
+.projects i {
+    height: 15px;
+    width: 15px;
+}
+
 
 .connect {
-    height: 100px;
+    border: none;
+    background-color:  rgba(85, 65, 85, .85);
+    padding: 0;
+    margin: 0;
+}
+
+.connect ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.connect a {
+    font-size: 30px;
+    color: black;
+}
+
+.connect a:hover {
+    font-size: 35px;
+}
+
+.connect li {
+    padding-right: 10px;
+}
+
+.connect ul {
+    text-align: center;
+}
+
+.connect i {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
 }
 
 
 @media only screen and (max-width: 600px) {
     
     .navbar {
-        width: 100px;
+        width: 125px;
+        height: 1500px;
     }
 
     .navList a {
+        font-size: 12.5px;
+    }
+
+    .navList a:hover {
         font-size: 15px;
     }
 
@@ -153,16 +224,16 @@ ul {
     }
 
     .container h2 {
-        font-size: 20px;
+        font-size: 25px;
     }
     
     .container h3 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .container li {
         line-height: 1.1;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .container h2 {
@@ -187,8 +258,16 @@ ul {
         font-size: 15px;
     }
 
-    .connect li {
-        font-size: 40px;
+    .connect {
+        text-align: center;
+    }
+    
+    .connect a {
+        font-size: 20px;
+    }
+
+    .connect a:hover {
+        font-size: 22.5px;
     }
 
 
