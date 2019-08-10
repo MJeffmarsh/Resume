@@ -8,8 +8,18 @@ body, html, h1, h2, h3, h4, p {
 
 body {
     line-height: 1;
+    color: white;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.column {
+    height: 100%;
+}
 
 ul {
     list-style: none;
@@ -17,21 +27,23 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .navbar {
-    float: right;
-    width: 175px;
-    height: 1425px;
-    
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  margin-left: auto;
 }
 
 .navList {
+    height: 100%;
+    width: 100%;
     padding-top: 10px; 
     list-style: none;
     background-color: rgb(65, 65, 65);
-    height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0 0 0 15px;
     position: fixed;
@@ -46,7 +58,6 @@ a {
 .navList a {
     padding-left: 15px;
     font-size: 20px;
-    color: black;
 }
 
 
@@ -62,16 +73,18 @@ a {
 
 .home {
     font-size: 50px;
-    padding-top: 50px;
     text-align: center;
     background-color: rgba(55, 95, 95, .85);
-    height: 400px;
+    height: auto;
     border-bottom: 1.5px solid rgba(0, 0, 0, .2);
 }
 
+
 .container {
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
     border-bottom: 1.5px solid rgba(0, 0, 0, .2);
 }
 
@@ -93,7 +106,6 @@ a {
 .bio {
     background-color:  rgba(55, 85, 95, .85);
     text-align: left;
-    height: 130px;
 }
 
 .exp {
@@ -141,11 +153,10 @@ a {
     font-weight: bolder;
     text-decoration: none;
     padding-left: 10px;
-    color: rgb(15, 15, 15);
 }
 
 .projects a:visited {
-    color: rgb(35, 35, 35);
+    color: lightgrey;
 }
 
 .projects p {
@@ -173,7 +184,6 @@ a {
 
 .connect a {
     font-size: 30px;
-    color: black;
 }
 
 .connect a:hover {
@@ -194,12 +204,31 @@ a {
     font-size: 30px;
 }
 
+.fa-bars {
+    visibility: hidden;
+    position: absolute;
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 768px) {
     
+    main {
+        width: 100%;
+    }
+
+    .fa-bars {
+        visibility: visible;
+        position: static;
+        float: right;
+        padding: 5px 5px 0 0;
+    }
+
+    .home h1 {
+        padding-top: 55px;
+    }
+
     .navbar {
-        width: 125px;
-        height: 1500px;
+        display: none;
     }
 
     .navList a {
@@ -270,5 +299,8 @@ a {
         font-size: 22.5px;
     }
 
+}
+
+@media only screen and (max-width: 320px) {
 
 }
