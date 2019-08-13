@@ -441,7 +441,7 @@ a {
     }
 
     .navbar {
-        width: 30%;
+        width: 40%;
     }
 
     .mobile {
@@ -458,7 +458,7 @@ a {
         float: right;
         padding: 5px 5px 0 0;
         height: 10%;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .mobile i:hover {
