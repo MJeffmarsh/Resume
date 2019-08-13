@@ -43,12 +43,17 @@ a {
     width: 100%;
     padding-top: 10px; 
     list-style: none;
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(105, 105, 105);
     margin: 0;
     padding: 0 0 0 15px;
     position: fixed;
     text-align: left;
-    border-left: 2px solid rgba(0, 0, 0, .2);
+    border-left: 2px solid rgba(0, 0, 0, 1);
+    text-shadow:
+    -1px -1px  0 rgb(45, 45, 45),
+    1px -1px 0 rgb(45, 45, 45),
+    -1px 1px 0 rgb(45, 45, 45),
+    1px 1px 0 rgb(45, 45, 45);
 }
 
 .navList li {
@@ -61,8 +66,23 @@ a {
 }
 
 
-.navList a:hover {
-    font-size: 25px;
+.navList li:hover {
+    text-shadow:
+    -1px -1px  0  rgba(75, 5, 80, 1),
+	1px -1px 0  rgba(75, 5, 80, 1),
+	-1px 1px 0  rgba(75, 5, 80, 1),
+    1px 1px 0 rgba(75, 5, 80, 1); 
+    color: black;
+}
+
+.navList a:focus {
+    text-shadow:
+    -1px -1px  0  black,
+    1px -1px 0  black,
+    -1px 1px 0  black,
+    1px 1px 0 black; 
+    
+    color: rgba(155, 5, 155, .85);
 }
 
 .navList i {
@@ -74,9 +94,25 @@ a {
 .home {
     font-size: 50px;
     text-align: center;
-    background-color: rgba(55, 95, 95, .85);
+    background-color: rgb(75, 75, 75);
     height: auto;
     border-bottom: 1.5px solid rgba(0, 0, 0, .2);
+    text-shadow:
+    -1px -1px  0  rgb(65, 65, 65),
+    1px -1px 0  rgb(65, 65, 65),
+    -1px 1px 0  rgb(65, 65, 65),
+    1px 1px 0 rgb(65, 65, 65);
+}
+
+.home img {
+    width: 235px;
+    height: 235px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.home h1 {
+    padding-bottom: 15px;
 }
 
 
@@ -104,12 +140,28 @@ a {
 
 
 .bio {
-    background-color:  rgba(55, 85, 95, .85);
+    background-color:  rgba(75, 75, 80);
     text-align: left;
+    text-shadow:
+		-1px -1px  0 rgb(65, 65, 70),
+		1px -1px 0 rgb(65, 65, 70),
+		-1px 1px 0 rgb(65, 65, 70),
+		1px 1px 0 rgb(65, 65, 70);
 }
 
+.bio p {
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+
 .exp {
-    background-color: rgba(55, 75, 95, .85);
+    background-color: rgb(75, 75, 85);
+    text-shadow:
+    -1px -1px  0 rgb(65, 65, 75),
+    1px -1px 0 rgb(65, 65, 75),
+    -1px 1px 0 rgb(65, 65, 75),
+    1px 1px 0 rgb(65, 65, 75);
 }
 
 .container h3 {     
@@ -125,7 +177,12 @@ a {
 }
 
 .education {
-    background-color:  rgba(65, 65, 95, .85);
+    background-color:  rgb(75, 75, 90);
+    text-shadow:
+    -1px -1px  0  rgb(65, 65, 80),
+	1px -1px 0   rgb(65, 65, 80),
+	-1px 1px 0   rgb(65, 65, 80),
+    1px 1px 0  rgb(65, 65, 80);
 }
 
 .education p {
@@ -134,7 +191,12 @@ a {
 }
 
 .projects {
-    background-color:  rgba(55, 55, 85, .85);
+    background-color:  rgb(75, 75, 95);
+    text-shadow:
+    -1px -1px  0 rgb(65, 65, 85),
+    1px -1px 0 rgb(65, 65, 85),
+    -1px 1px 0 rgb(65, 65, 85),
+    1px 1px 0 rgb(65, 65, 85);
 }
 
 .projects h4 {
@@ -143,10 +205,29 @@ a {
 
 .projects li {
     padding-bottom: 5px;
+    font-size: 17.5px;
 }
 
 .projects li:hover {
-    font-size: 20px;
+    text-shadow:
+    -1px -1px  0  rgba(75, 5, 80, 1),
+	1px -1px 0  rgba(75, 5, 80, 1),
+	-1px 1px 0  rgba(75, 5, 80, 1),
+    1px 1px 0 rgba(75, 5, 80, 1); 
+    color: black;
+}
+
+.projects a:focus {
+    text-shadow:
+    -1px -1px  0  black,
+    1px -1px 0  black,
+    -1px 1px 0  black,
+    1px 1px 0 black; 
+    color: rgba(155, 5, 155, .85);
+}
+
+.projects a:visited {
+    color: rgba(1, 225, 55, .85);
 }
 
 .projects a {
@@ -155,9 +236,6 @@ a {
     padding-left: 10px;
 }
 
-.projects a:visited {
-    color: lightgrey;
-}
 
 .projects p {
     margin-left: 10px;
@@ -171,9 +249,14 @@ a {
 
 .connect {
     border: none;
-    background-color:  rgba(85, 65, 85, .85);
+    background-color:  rgb(75, 75, 100);
     padding: 0;
     margin: 0;
+    text-shadow:
+    -1px -1px  0 rgb(65, 65, 95),
+    1px -1px 0 rgb(65, 65, 95),
+    -1px 1px 0 rgb(65, 65, 95),
+    1px 1px 0 rgb(65, 65, 95);
 }
 
 .connect ul {
@@ -186,8 +269,13 @@ a {
     font-size: 30px;
 }
 
-.connect a:hover {
-    font-size: 35px;
+.connect li:hover {
+    text-shadow:
+    -1px -1px  0  rgba(75, 5, 80, 1),
+	1px -1px 0  rgba(75, 5, 80, 1),
+	-1px 1px 0  rgba(75, 5, 80, 1),
+    1px 1px 0 rgba(75, 5, 80, 1); 
+    color: black;
 }
 
 .connect li {
@@ -204,10 +292,20 @@ a {
     font-size: 30px;
 }
 
-.fa-bars {
+.mobile i {
     visibility: hidden;
-    position: absolute;
+    margin-right: 5px;
 }
+
+.mobile {
+    visibility: hidden;
+}
+
+
+.show_nav {
+    right: -70%!important;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -216,27 +314,48 @@ a {
         width: 100%;
     }
 
-    .fa-bars {
+    .navList {
+        right: 100%;
+        opacity: 0.85;
+        padding-top: 30px;
+    }
+
+    .navbar {
+        width: 30%;
+    }
+
+    .mobile {
         visibility: visible;
-        position: static;
+        height: 5%;
+        width: 100%;
+        position: fixed;
+        background-color: rgb(65, 65, 65); 
+        border-bottom: 1.5px solid rgba(0, 0, 0, .2);
+    }
+
+    .mobile i {
+        visibility: visible;
         float: right;
         padding: 5px 5px 0 0;
+        height: 10%;
+        font-size: 30px;
+    }
+
+    .mobile i:hover {
+        text-shadow:
+         -1px -1px  0  rgba(75, 5, 80, 1),
+	    1px -1px 0  rgba(75, 5, 80, 1),
+	    -1px 1px 0  rgba(75, 5, 80, 1),
+         1px 1px 0 rgba(75, 5, 80, 1); 
+         color: black; 
+    }
+
+    .mobile i:focus {
+        color:  rgba(75, 5, 80, 1)
     }
 
     .home h1 {
         padding-top: 55px;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .navList a {
-        font-size: 12.5px;
-    }
-
-    .navList a:hover {
-        font-size: 15px;
     }
 
     .container {
@@ -281,6 +400,18 @@ a {
         padding: 5px 0px 10px 5px;
     }
 
+    .exp li {
+        padding-bottom: 5px;
+    }
+
+    .projects h2 {
+        padding-bottom: 10px;
+    }
+
+    .projects h3 {
+        padding-bottom: 5px;
+    }
+
     .projects p {
         padding: 2px 0px 0px 2px;
         margin: 0;
@@ -295,12 +426,125 @@ a {
         font-size: 20px;
     }
 
-    .connect a:hover {
-        font-size: 22.5px;
-    }
 
 }
 
 @media only screen and (max-width: 320px) {
+    main {
+        width: 100%;
+    }
+
+    .navList {
+        right: 100%;
+        opacity: 0.85;
+        padding-top: 30px;
+    }
+
+    .navbar {
+        width: 30%;
+    }
+
+    .mobile {
+        visibility: visible;
+        height: 5%;
+        width: 100%;
+        position: fixed;
+        background-color: rgb(65, 65, 65); 
+        border-bottom: 1.5px solid rgba(0, 0, 0, .2);
+    }
+
+    .mobile i {
+        visibility: visible;
+        float: right;
+        padding: 5px 5px 0 0;
+        height: 10%;
+        font-size: 30px;
+    }
+
+    .mobile i:hover {
+        text-shadow:
+         -1px -1px  0  rgba(75, 5, 80, 1),
+	    1px -1px 0  rgba(75, 5, 80, 1),
+	    -1px 1px 0  rgba(75, 5, 80, 1),
+         1px 1px 0 rgba(75, 5, 80, 1); 
+         color: black; 
+    }
+
+    .mobile i:focus {
+        color:  rgba(75, 5, 80, 1)
+    }
+
+    .home h1 {
+        padding-top: 55px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .container ul {
+        padding: 0 0 0 5px;
+    
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .container h2 {
+        font-size: 25px;
+    }
+    
+    .container h3 {
+        font-size: 20px;
+    }
+
+    .container li {
+        line-height: 1.1;
+        font-size: 15px;
+    }
+
+    .container h2 {
+        padding-bottom: 5px;
+    }
+
+    .container h3 {
+        padding: 0;
+    }
+
+    .bio {
+        height: 100%;
+    }
+
+    .bio p {
+        padding: 5px 0px 10px 5px;
+    }
+
+    .exp li {
+        padding-bottom: 5px;
+    }
+
+    .projects h2 {
+        padding-bottom: 10px;
+    }
+
+    .projects h3 {
+        padding-bottom: 5px;
+    }
+
+    .projects p {
+        padding: 2px 0px 0px 2px;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .connect {
+        text-align: center;
+    }
+    
+    .connect a {
+        font-size: 20px;
+    }
+
 
 }
