@@ -98,10 +98,10 @@ a {
     height: auto;
     border-bottom: 1.5px solid rgba(0, 0, 0, .2);
     text-shadow:
-    -1px -1px  0  rgb(65, 65, 65),
-    1px -1px 0  rgb(65, 65, 65),
-    -1px 1px 0  rgb(65, 65, 65),
-    1px 1px 0 rgb(65, 65, 65);
+    -1px -1px  0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .home img {
@@ -162,6 +162,15 @@ a {
     1px -1px 0 rgb(65, 65, 75),
     -1px 1px 0 rgb(65, 65, 75),
     1px 1px 0 rgb(65, 65, 75);
+}
+
+.exp span {
+    font-weight: bolder;
+    text-shadow:
+    -1px -1px  0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .container h3 {     
@@ -325,8 +334,11 @@ a {
     }
 
     .mobile {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
         visibility: visible;
-        height: 5%;
+        height: 40px;
         width: 100%;
         position: fixed;
         background-color: rgb(65, 65, 65); 
@@ -335,10 +347,10 @@ a {
 
     .mobile i {
         visibility: visible;
-        float: right;
         padding: 5px 5px 0 0;
         height: 10%;
         font-size: 30px;
+        display: flex;
     }
 
     .mobile i:hover {
@@ -441,12 +453,15 @@ a {
     }
 
     .navbar {
-        width: 40%;
+        width: 50%;
     }
 
     .mobile {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
         visibility: visible;
-        height: 5%;
+        height: 40px;
         width: 100%;
         position: fixed;
         background-color: rgb(65, 65, 65); 
