@@ -43,7 +43,7 @@ a {
     width: 100%;
     padding-top: 10px; 
     list-style: none;
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(45, 45, 45);
     margin: 0;
     padding: 0 0 0 15px;
     position: fixed;
@@ -78,11 +78,10 @@ a {
 .navList a:focus {
     text-shadow:
     -1px -1px  0  black,
-    1px -1px 0  black,
-    -1px 1px 0  black,
+	1px -1px 0  black,
+	-1px 1px 0 black,
     1px 1px 0 black; 
-    
-    color: rgba(155, 5, 155, .85);
+    color: rgb(0, 255, 255)
 }
 
 .navList i {
@@ -236,7 +235,12 @@ a {
 }
 
 .projects a:visited {
-    color: rgba(1, 225, 55, .85);
+    text-shadow:
+    -1px -1px  0  black,
+	1px -1px 0  black,
+	-1px 1px 0 black,
+    1px 1px 0 black; 
+    color: rgb(0, 255, 255)
 }
 
 .projects a {
@@ -453,7 +457,7 @@ a {
     }
 
     .navList {
-        right: 100%;
+        right: 90%;
         opacity: 0.85;
         padding-top: 30px;
     }
