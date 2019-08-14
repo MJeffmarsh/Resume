@@ -311,9 +311,7 @@ a {
 }
 
 
-.show_nav {
-    right: -60%!important;
-}
+
 
 
 
@@ -331,6 +329,10 @@ a {
 
     .navbar {
         width: 30%;
+    }
+
+    .show_nav {
+        right: -60%!important;
     }
 
     .mobile {
@@ -444,6 +446,10 @@ a {
 @media only screen and (max-width: 320px) {
     main {
         width: 100%;
+    }
+
+    .show_nav {
+        right: -50%!important;
     }
 
     .navList {
