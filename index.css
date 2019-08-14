@@ -90,6 +90,14 @@ a {
     font-size: 17.5px;
 }
 
+.container h2 {
+    text-shadow:
+    -1px -1px  0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
 .home {
     font-size: 50px;
     text-align: center;
@@ -165,11 +173,8 @@ a {
 
 .exp span {
     font-weight: bolder;
-    text-shadow:
-    -1px -1px  0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black;
+    font-style: italic;
+    
 }
 
 .container h3 {     
