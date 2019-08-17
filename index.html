@@ -8,6 +8,8 @@
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -26,7 +28,7 @@
                     </ul>
                 </nav>
             </header>
-    <main class="column">
+    <main class="column" role="main">
      
      <div class="home" id="home">
          <div class="mobile"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -39,19 +41,19 @@
 
             <p>Name: Morgan "Jeffrey" Marshall</p>
             <p>Current Location: Moore, Oklahoma</p>
-            <p>Date of Birth: May 6, 1995</p>
-            <p>OS: Windows</p>
+            <p>I love to build, code on, and game on computers. I am and have always been a Windows user. I firmly believe there is always room for improvement,
+                 so I am always trying to make what I am working on better.  </p>
          
 
      </div>
 
-     <div class="exp container" id="exp">
+     <!--<div class="exp container" id="exp">
          <h2>Experience</h2>
 
          <h3>Marshall Lawn Care (2014-2019)</h3>
             <ul>
-                <li><span>Role: </span>Spray Technician</li>
-                <li><span>Job: </span>Locate and eliminate weeds on customers' property</li>
+                <li><span>Role: </span> Spray Technician</li>
+                <li><span>Job: </span> Locate and eliminate weeds on customers' property</li>
             </ul>
 
         <h3><a href="https://www.montecristoironworks.com/" target="_blank">Monte Cristo Ironworks (2014-2018)</a></h3>
@@ -82,19 +84,19 @@
             </ul>
             
 
-     </div>
+     </div> -->
 
      <div class="projects container" id="projects">
         <h2>Projects</h2>
         
             <h3>Zelda Quiz App</h3>
             <p>An assignment for Bloc; A simple quiz on the basics of The Legend of Zelda franchise (My first project)</p>
+                <p>Tech Used: HTML CSS Javascript</p>
                 <ul>
-                    <h4>Tech Used: HTML CSS Javascript</h4>
-                    <li><i class="fa fa-picture-o" aria-hidden="true"></i><a href="resources/zelda1.jpeg" target="_blank">Screenshot 1</a></li>
-                    <li><i class="fa fa-picture-o" aria-hidden="true"></i><a href="resources/zelda2.jpeg" target="_blank">Screenshot 2</a></li>
-                    <li><i class="fa fa-picture-o" aria-hidden="true"></i><a href="resources/zelda3.jpeg" target="_blank">Screenshot 3</a></li>
-                    <li><i class="fa fa-picture-o" aria-hidden="true"></i><a href="resources/zelda4.jpeg" target="_blank">Screenshot 4</a></li>
+                    <li><a data-fancybox="gallery" href="resources/zelda1.jpeg"><img src="resources/zelda1.jpeg" alt="Zelda Quiz start"></a></li>
+                    <li><a data-fancybox="gallery" href="resources/zelda2.jpeg"><img src="resources/zelda2.jpeg" alt="Zelda Quiz right answer"></a></li>
+                    <li><a data-fancybox="gallery" href="resources/zelda3.jpeg"><img src="resources/zelda3.jpeg" alt="Zelda Quiz wrong answer"></a></li>
+                    <li><a data-fancybox="gallery" href="resources/zelda4.jpeg"><img src="resources/zelda4.jpeg" alt="Zelda Quiz results"></a></li>
                     <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/MJeffmarsh/QuizApp2.0" target="_blank">Repo</a></li>
                     <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://mjeffmarsh.github.io/QuizApp2.0/" target="_blank">Live Page</a></li>
                 </ul>
@@ -108,7 +110,7 @@
                 <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href=https://www.linkedin.com/in/jeffrey-marshall-370a3618b target='_blank'> LinkedIn</a></li>
                 <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:m.jeffrey.marshall@gmail.com"> Email</a></li>
             </ul>     
-     </div>
+        </div>
 </main>
 
     

@@ -30,6 +30,10 @@ a {
     color: white;
 }
 
+p {
+    line-height: 1.5;
+}
+
 .navbar {
   height: auto;
   display: flex;
@@ -61,7 +65,7 @@ a {
 }
 
 .navList a {
-    padding-left: 15px;
+    padding-left: 5px;
     font-size: 20px;
 }
 
@@ -221,6 +225,16 @@ a {
     font-size: 17.5px;
 }
 
+.projects img {
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.projects img:hover {
+   border: 2px solid white;
+}
+
 .projects li:hover {
     text-shadow:
     -1px -1px  0  rgba(75, 5, 80, 1),
@@ -320,11 +334,20 @@ a {
 }
 
 
+@media only screen and (max-width: 1390px) and (min-width: 769px) {
+    
+    main {
+        width: 85%;
+    }
+
+    .navbar {
+        width: 15%;
+    }
+}
 
 
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 935px) {
     
     main {
         width: 100%;
