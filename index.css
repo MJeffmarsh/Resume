@@ -14,7 +14,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 88%;
 }
 
 .column {
@@ -30,7 +30,7 @@ a {
     color: white;
 }
 
-p {
+.bio p {
     line-height: 1.5;
 }
 
@@ -38,7 +38,7 @@ p {
   height: auto;
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 12%;
   margin-left: auto;
 }
 
@@ -65,7 +65,7 @@ p {
 }
 
 .navList a {
-    padding-left: 5px;
+    padding-left: 15px;
     font-size: 20px;
 }
 
@@ -161,7 +161,7 @@ p {
 }
 
 .bio p {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin: 0;
 }
 
@@ -223,6 +223,8 @@ p {
 .projects li {
     padding-bottom: 5px;
     font-size: 17.5px;
+    display: inline-flex;
+    justify-content: space-evenly;
 }
 
 .projects img {
@@ -333,8 +335,7 @@ p {
     visibility: hidden;
 }
 
-
-@media only screen and (max-width: 1390px) and (min-width: 769px) {
+@media only screen and (max-width: 1200px) {
     
     main {
         width: 85%;
@@ -346,8 +347,72 @@ p {
 }
 
 
+@media only screen and (max-width: 992px) {
+    
+    main {
+        width: 100%;
+    }
 
-@media only screen and (max-width: 935px) {
+    .navList {
+        right: 100%;
+        opacity: 0.85;
+        padding-top: 30px;
+    }
+
+    .navbar {
+        width: 30%;
+    }
+
+    .show_nav {
+        right: -80%!important;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        visibility: visible;
+        height: 40px;
+        width: 100%;
+        position: fixed;
+        background-color: rgb(65, 65, 65); 
+        border-bottom: 1.5px solid rgba(0, 0, 0, .2);
+    }
+
+    .mobile i {
+        visibility: visible;
+        padding: 5px 5px 0 0;
+        height: 10%;
+        font-size: 30px;
+        display: flex;
+    }
+
+    .mobile i:hover {
+        text-shadow:
+         -1px -1px  0  rgba(75, 5, 80, 1),
+	    1px -1px 0  rgba(75, 5, 80, 1),
+	    -1px 1px 0  rgba(75, 5, 80, 1),
+         1px 1px 0 rgba(75, 5, 80, 1); 
+         color: black; 
+    }
+
+    .mobile i:focus {
+        color:  rgba(75, 5, 80, 1)
+    }
+
+    .home h1 {
+        padding-top: 55px;
+    }
+
+    .projects p {
+        border-bottom: 5px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
     
     main {
         width: 100%;
@@ -459,7 +524,7 @@ p {
     }
 
     .projects p {
-        padding: 2px 0px 0px 2px;
+        padding: 2px 0px 5px 2px;
         margin: 0;
         font-size: 15px;
     }
@@ -485,7 +550,7 @@ p {
     }
 
     .navList {
-        right: 90%;
+        right: 100%;
         opacity: 0.85;
         padding-top: 30px;
     }
